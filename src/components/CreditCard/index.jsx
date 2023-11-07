@@ -12,10 +12,16 @@ const CreditCard =() => {
 
     const focusNextInput = (input) => {
        input.nextSibling.focus();
+       
     }
 
     const handleChange = (event) => {
-        (event.target.value).length === 4 ? focusNextInput(event.target) : null;
+        if (event.target.id !== "input4") {
+            (event.target.value).length === 4 && focusNextInput(event.target);
+        } else {
+            (event.target.value).length === 4 && event.target.blur();
+        }
+        
     }
 
 
