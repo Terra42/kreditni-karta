@@ -27,7 +27,7 @@ const CreditCard =() => {
 
     return(
         <div className="credit-card">
-            <h2>Zadeje číslo kreditní karty:</h2>
+            <h2>Zadejte číslo kreditní karty:</h2>
             <form>
                 <input type="text" id='input1' onChange={(e) => handleChange(e)} ref={inputRef}/>
                 <input type="text" id='input2' onChange={(e) => handleChange(e)}/>
